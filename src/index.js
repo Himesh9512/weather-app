@@ -1,11 +1,5 @@
 import "./style.css";
+import create_page from "./ui";
 
-(() => {
-  const container = document.getElementById("container");
-  const element = document.createElement("div");
+create_page();
 
-  element.classList.add('text-4xl','text-blue-600');
-  element.innerText = "Hello world";
-
-  container.appendChild(element);
-})();
