@@ -4,7 +4,7 @@
 
 ## Preview
 
-![Preview screenshot](https://github.com/weather-app/blob/main/preview.png)
+![Preview screenshot](https://github.com/Himesh9512/weather-app/blob/main/preview.png)
 
 ## Tech Stack
 
