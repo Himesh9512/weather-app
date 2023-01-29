@@ -1,6 +1,6 @@
 # weather app
 
-[LIVE PREVIEW](https://himesh9512.github.io/sign-up-form)
+[LIVE PREVIEW](https://himesh9512.github.io/weather-app)
 
 ## Preview
 
