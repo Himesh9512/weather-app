@@ -1,5 +1,3 @@
-import create_weather_card, { location_title } from "./card";
-
 // create html element and add class to it
 function create_element(elementName, className) {
 	const element = document.createElement(elementName);
@@ -11,9 +9,6 @@ function create_element(elementName, className) {
 // card section will work as placeholder for weather cards
 function create_card_section() {
 	const cardSection = create_element("div", "card-section");
-
-	cardSection.appendChild(location_title("Surat", "IN"));
-	cardSection.appendChild(create_weather_card("27", "cloudy", "29", "56", "1.0", "30"));
 
 	return cardSection;
 }
@@ -60,6 +55,7 @@ function craete_hyperlink() {
 	const link = document.createElement("a");
 	link.innerText = "Himesh9512";
 	link.href = "https://github.com/Himesh9512";
+	link.target = "_blank";
 
 	return link;
 }
