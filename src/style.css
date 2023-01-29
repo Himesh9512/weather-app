@@ -1,85 +1,149 @@
 * {
-  margin: 0;
-  padding: 0;
-  color: white;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Baumans";
 }
 
 /*  || main ||  */
 
 #container {
-  background: url(./assets/images/background-image.jpg) no-repeat center/cover
-    fixed;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 90% 10%;
+	background: url(./assets/images/background-image.jpg) no-repeat center/cover fixed;
+	height: 100vh;
+	width: 100vmax;
+	display: grid;
+	grid-template-rows: 90% 10%;
 }
 
 /*  || body ||  */
 
+.body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
 /*  ********** search bar **********  */
 
 .search {
-  width: 30%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 30%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .search-input {
-  width: 80%;
-  height: 38px;
-  border-radius: 45px;
-  outline: #000000 solid 2px;
-  border: none;
-  color: black;
-  padding-left: 5%;
-  font-size: 1.2rem;
+	width: 100%;
+	height: 38px;
+	border-radius: 45px;
+	outline: #000000 solid 2px;
+	border: none;
+	color: black;
+	padding-left: 5%;
+	font-size: 1.2rem;
 }
 
 .search-input:focus {
-  outline: none;
-  border: none;
-  outline: #000000 solid 4px;
+	outline: none;
+	border: none;
+	outline: #000000 solid 4px;
 }
 
 .search-button {
-  height: 40px;
-  width: 40px;
-  border-radius: 45px;
-  border: none;
-  background-color: #334155;
-  cursor: pointer;
+	border-radius: 45px;
+	border: none;
+	background-color: transparent;
+	position: relative;
+	right: 40px;
+	cursor: pointer;
 }
 
-.body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.material-icons {
+	color: #000000;
+	font-size: 1.8rem;
+}
+/*  ********** card section **********  */
+
+.card-section {
+	height: 55%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
+/*  ********** weather card **********  */
+
+.location-title {
+	font-size: 3rem;
+	/* font-family: "Confortaa"; */
+}
+
+.card {
+	background-color: #334155;
+	display: flex;
+	padding: 2rem;
+	width: 83%;
+	border-radius: 25px;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+.temp-section,
+.other-info-section {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.temp-section {
+	align-items: center;
+	font-family: "Kosugi Maru";
+}
+
+.other-info-section {
+	padding-left: 30px;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	align-items: flex-start;
+	border-left: 1px solid white;
+}
+
+.temperature {
+	font-size: 5rem;
+	letter-spacing: -7px;
+}
+
+.weather {
+	font-size: 2rem;
+}
 /*  || footer ||  */
 
 .footer {
-  height: 100%;
-  width: 100%;
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  word-spacing: 2px;
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	word-spacing: 2px;
 }
 
 a {
-  text-decoration: none;
-  color: #0e7490;
+	text-decoration: none;
+	color: #0e7490;
 }
 
 a:hover {
-    color: #06b6d4;
+	color: #06b6d4;
 }
