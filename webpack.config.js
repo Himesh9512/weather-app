@@ -6,7 +6,7 @@ module.exports = {
 		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist"),
 	},
-	mode: "development",
+	mode: "production",
 	devServer: {
 		static: "./dist/",
 		liveReload: true,
@@ -29,7 +29,7 @@ module.exports = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: [["@babel/preset-env", { targets: "defaults" }]],
+						presets: [["@babel/preset-env", { targets: ">0.25%" }]],
 					},
 				},
 			},
