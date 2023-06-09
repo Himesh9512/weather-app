@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Himesh9512/weather-app/issues"
   },
-  "homepage": "https://github.com/Himesh9512/weather-app#readme",
+  "homepage": "https://github.com/Himesh9512/weather-app/dist/index.html",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
