@@ -15,4 +15,5 @@ function onload_tasks() {
 	create_page();
 	get_query();
 }
+
 window.onload = onload_tasks();
