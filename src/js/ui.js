@@ -30,7 +30,7 @@ function create_search_bar() {
 
 // create body part of page
 function create_body() {
-	const body = create_element("div", "body");
+	const body = create_element("main", "main");
 
 	body.appendChild(create_search_bar());
 	body.appendChild(create_card_section());
@@ -40,7 +40,7 @@ function create_body() {
 
 // create footer of page
 function create_footer() {
-	const footer = create_element("div", "footer");
+	const footer = create_element("footer", "footer");
 
 	const textContent = create_element("div", "footer-content");
 	textContent.innerText = "© created by ";

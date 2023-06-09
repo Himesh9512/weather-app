@@ -5,19 +5,17 @@
 	font-family: "Baumans";
 }
 
-/*  || main ||  */
+/*  || body ||  */
 
 #container {
 	background: url(./assets/images/background-image.jpg) no-repeat center/cover fixed;
-	max-width: 100vmax;
-	display: grid;
-	grid-template-rows: 90% 10%;
+	min-height: 100vh;
 }
 
-/*  || body ||  */
+/*  || main ||  */
 
-.body {
-	height: 100%;
+.main {
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -29,41 +27,41 @@
 /*  ********** search bar **********  */
 
 .search {
-	width: 30%;
 	height: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 20px;
 }
 
 .search-input {
-	width: 100%;
-	height: 38px;
+	min-height: 100%;
 	border-radius: 45px;
-	outline: #000000 solid 2px;
+	outline: black solid 1px;
 	border: none;
 	color: black;
 	padding-left: 5%;
 	font-size: 1.2rem;
+	transition: outline 0.1s ease-in-out;
 }
 
 .search-input:focus {
 	outline: none;
 	border: none;
-	outline: #000000 solid 4px;
+	outline: black solid 4px;
 }
 
 .search-button {
 	border-radius: 45px;
 	border: none;
-	background-color: transparent;
-	position: relative;
-	right: 40px;
+	background-color: black;
+	height: 45px;
+	width: 80px;
 	cursor: pointer;
 }
 
 .material-icons {
-	color: #000000;
+	color: white;
 	font-size: 1.8rem;
 }
 /*  ********** card section **********  */
@@ -131,7 +129,7 @@
 	padding: 20px 0;
 	text-align: center;
 	width: 100%;
-	background-color: #000000;
+	background-color: black;
 	font-size: 1.5rem;
 	word-spacing: 2px;
 	position: fixed;
